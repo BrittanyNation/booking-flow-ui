@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Step 3 · Checkout — Atlas Bike Tours | Brittany Nation</title>
+<meta name="description" content="Step 3 of the Atlas Bike Tours booking flow UI concept: guest details, payment mock, and a matching order summary.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atlas Bike Tours — Booking Flow UI Concept | Brittany Nation">
+<meta property="og:description" content="An original booking/checkout flow UI concept in navy, sky & signal yellow. Designed by Brittany Nation (Sketch / Webflow workflow, hand-built HTML/CSS).">
+<meta property="og:url" content="https://brittanynation.github.io/booking-flow-ui/checkout.html">
+<meta property="og:image" content="https://brittanynation.github.io/booking-flow-ui/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://brittanynation.github.io/booking-flow-ui/og-image.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="wrap"><div class="brand">BRITTANY NATION <span>• DESIGN</span></div><nav class="nav" aria-label="Project"><a href="index.html">1 · Choose a tour</a><a href="details.html">2 · Details</a><a href="checkout.html" aria-current="page">3 · Checkout</a><a href="confirmation.html">Confirmed</a><a href="https://github.com/BrittanyNation/booking-flow-ui">GitHub Repo</a></nav></div></header>
+<main id="main"><div class="wrap">
+  <ol class="stepper" aria-label="Booking progress">
+    <li class="done"><span class="num" aria-hidden="true">✓</span><span><strong>Choose a tour</strong>Coastal Sunrise Ride</span></li>
+    <li class="done"><span class="num" aria-hidden="true">✓</span><span><strong>Date &amp; bikes</strong>Sat, Nov 7 · 2 riders</span></li>
+    <li class="active"><span class="num" aria-hidden="true">3</span><span><strong>Checkout</strong>You are here</span></li>
+  </ol>
+  <div class="layout">
+    <section class="panel" aria-label="Checkout">
+      <h2>Step 3 — Checkout</h2>
+      <form>
+        <h3>Lead rider</h3>
+        <div class="row2">
+          <div class="field"><label for="name">Full name</label><input id="name" autocomplete="name" placeholder="Jordan Ellis"></div>
+          <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" placeholder="jordan@example.com"><p class="hint">Your meeting-point details go here.</p></div>
+        </div>
+        <h3>Payment <span class="hint">(demo — no real payment is taken)</span></h3>
+        <div class="field"><label for="card">Card number</label><input id="card" inputmode="numeric" placeholder="4242 4242 4242 4242"></div>
+        <div class="row2">
+          <div class="field"><label for="exp">Expiry</label><input id="exp" placeholder="MM / YY"></div>
+          <div class="field"><label for="cvc">CVC</label><input id="cvc" inputmode="numeric" placeholder="123"></div>
+        </div>
+        <div class="notice"><strong>Free reschedule</strong> up to 24 hours before departure. Weather cancellations by Atlas are always fully refunded.</div>
+        <p style="margin-top:18px"><a class="btn btn-yellow" href="confirmation.html">Pay $172.80 &amp; book →</a> <a class="btn btn-ghost" href="details.html">Back to details</a></p>
+      </form>
+    </section>
+    <aside class="panel summary" aria-label="Order summary">
+      <h3>Your ride</h3>
+      <dl>
+        <div class="row"><dt>Tour</dt><dd><strong>Coastal Sunrise Ride</strong></dd></div>
+        <div class="row"><dt>Date</dt><dd>Sat, Nov 7 · 7:00 AM</dd></div>
+        <div class="row"><dt>2 riders × $68</dt><dd>$136.00</dd></div>
+        <div class="row"><dt>Picnic basket</dt><dd>$24.00</dd></div>
+        <div class="row"><dt>Taxes &amp; fees</dt><dd>$12.80</dd></div>
+        <div class="row total"><dt>Total due today</dt><dd>$172.80</dd></div>
+      </dl>
+      <p class="hint">Meeting point: Atlas dockside shop, Pier 4. Arrive 20 minutes early for bike fitting.</p>
+    </aside>
+  </div>
+</div></main>
+<footer><div class="wrap">Original portfolio concept by Brittany Nation. Atlas Bike Tours is fictional; this checkout is a design demo and takes no payment.</div></footer>
+</body>
+</html>
