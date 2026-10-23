@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Step 2 · Date &amp; Bikes — Atlas Bike Tours | Brittany Nation</title>
+<meta name="description" content="Step 2 of the Atlas Bike Tours booking flow UI concept: date, riders, bike type, and add-ons with a live order summary.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atlas Bike Tours — Booking Flow UI Concept | Brittany Nation">
+<meta property="og:description" content="An original booking/checkout flow UI concept in navy, sky & signal yellow. Designed by Brittany Nation (Sketch / Webflow workflow, hand-built HTML/CSS).">
+<meta property="og:url" content="https://brittanynation.github.io/booking-flow-ui/details.html">
+<meta property="og:image" content="https://brittanynation.github.io/booking-flow-ui/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://brittanynation.github.io/booking-flow-ui/og-image.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="wrap"><div class="brand">BRITTANY NATION <span>• DESIGN</span></div><nav class="nav" aria-label="Project"><a href="index.html">1 · Choose a tour</a><a href="details.html" aria-current="page">2 · Details</a><a href="checkout.html">3 · Checkout</a><a href="confirmation.html">Confirmed</a><a href="https://github.com/BrittanyNation/booking-flow-ui">GitHub Repo</a></nav></div></header>
+<main id="main"><div class="wrap">
+  <ol class="stepper" aria-label="Booking progress">
+    <li class="done"><span class="num" aria-hidden="true">✓</span><span><strong>Choose a tour</strong>Coastal Sunrise Ride</span></li>
+    <li class="active"><span class="num" aria-hidden="true">2</span><span><strong>Date &amp; bikes</strong>You are here</span></li>
+    <li><span class="num" aria-hidden="true">3</span><span><strong>Checkout</strong>Guest details &amp; payment</span></li>
+  </ol>
+  <div class="layout">
+    <section class="panel" aria-label="Booking details">
+      <h2>Step 2 — Date, riders &amp; bikes</h2>
+      <form>
+        <div class="row2">
+          <div class="field"><label for="date">Tour date</label><input id="date" type="date" value="2026-11-07"><p class="hint">Saturday departures fill first.</p></div>
+          <div class="field"><label for="riders">Riders</label><select id="riders"><option>1 rider</option><option selected>2 riders</option><option>3 riders</option><option>4 riders</option></select></div>
+        </div>
+        <div class="field"><label for="bike">Bike type</label><select id="bike"><option selected>Comfort hybrid — included</option><option>E-bike — +$18 per rider</option><option>Road bike — +$12 per rider</option></select><p class="hint">Helmets and locks are included with every bike.</p></div>
+        <fieldset style="border:0;padding:0;margin:0 0 16px"><legend style="font-weight:700;margin-bottom:.5rem">Add-ons</legend>
+          <label class="check"><input type="checkbox" checked><span><strong>Picnic basket — $24</strong><br><span class="hint">Local cheese, bread, and fruit for the lighthouse stop.</span></span></label>
+          <label class="check"><input type="checkbox"><span><strong>Photo package — $15</strong><br><span class="hint">Your guide's best shots, sent the same evening.</span></span></label>
+          <label class="check"><input type="checkbox"><span><strong>Flexible cancellation — $9</strong><br><span class="hint">Full refund up to 12 hours before departure.</span></span></label>
+        </fieldset>
+        <a class="btn btn-primary" href="checkout.html">Continue to checkout →</a>
+        <a class="btn btn-ghost" href="index.html">Back to tours</a>
+      </form>
+    </section>
+    <aside class="panel summary" aria-label="Order summary">
+      <h3>Your ride</h3>
+      <dl>
+        <div class="row"><dt>Tour</dt><dd><strong>Coastal Sunrise Ride</strong></dd></div>
+        <div class="row"><dt>Date</dt><dd>Sat, Nov 7 · 7:00 AM</dd></div>
+        <div class="row"><dt>2 riders × $68</dt><dd>$136.00</dd></div>
+        <div class="row"><dt>Picnic basket</dt><dd>$24.00</dd></div>
+        <div class="row"><dt>Taxes &amp; fees</dt><dd>$12.80</dd></div>
+        <div class="row total"><dt>Total due today</dt><dd>$172.80</dd></div>
+      </dl>
+      <p class="hint">Design choice: this summary is identical on steps 2 and 3, so the rider can check the math before they ever reach payment.</p>
+    </aside>
+  </div>
+</div></main>
+<footer><div class="wrap">Original portfolio concept by Brittany Nation. Atlas Bike Tours is fictional; all data is sample content.</div></footer>
+</body>
+</html>
