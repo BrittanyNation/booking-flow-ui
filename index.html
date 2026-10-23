@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atlas Bike Tours — Booking Flow UI Concept | Brittany Nation</title>
+<meta name="description" content="Atlas Bike Tours is an original booking and checkout flow UI concept for a fictional guided bike tour company: choose a tour, pick a date and bikes, then check out — in midnight navy, sky blue, and signal yellow.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Atlas Bike Tours — Booking Flow UI Concept | Brittany Nation">
+<meta property="og:description" content="An original booking/checkout flow UI concept — tour selection, details, and checkout in navy, sky & signal yellow. Designed by Brittany Nation (Sketch / Webflow workflow, hand-built HTML/CSS).">
+<meta property="og:url" content="https://brittanynation.github.io/booking-flow-ui/">
+<meta property="og:image" content="https://brittanynation.github.io/booking-flow-ui/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Atlas Bike Tours — Booking Flow UI Concept | Brittany Nation">
+<meta name="twitter:description" content="Booking flow UI concept for a fictional bike tour company. Navy, sky & signal yellow. Original portfolio work by Brittany Nation.">
+<meta name="twitter:image" content="https://brittanynation.github.io/booking-flow-ui/og-image.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="wrap"><div class="brand">BRITTANY NATION <span>• DESIGN</span></div><nav class="nav" aria-label="Project"><a href="index.html" aria-current="page">1 · Choose a tour</a><a href="details.html">2 · Details</a><a href="checkout.html">3 · Checkout</a><a href="confirmation.html">Confirmed</a><a href="https://github.com/BrittanyNation/booking-flow-ui">GitHub Repo</a></nav></div></header>
+<main id="main"><div class="wrap">
+  <section class="hero">
+    <p class="eyebrow">Booking / Checkout Flow UI • Original Portfolio Work</p>
+    <h1>Booking a bike tour should feel like <em>the ride itself — easy.</em></h1>
+    <p class="lede">Atlas Bike Tours is a fictional guided tour company. This concept designs its full booking flow in three clear steps, so a rider always knows what they picked, what it costs, and what comes next — no surprises at checkout.</p>
+    <div class="pills"><span class="pill">Midnight navy &amp; sky palette</span><span class="pill">Booking flow UI</span><span class="pill">Hand-built HTML / CSS</span><span class="pill">Sketch / Webflow workflow</span></div>
+  </section>
+
+  <ol class="stepper" aria-label="Booking progress">
+    <li class="active"><span class="num" aria-hidden="true">1</span><span><strong>Choose a tour</strong>You are here</span></li>
+    <li><span class="num" aria-hidden="true">2</span><span><strong>Date &amp; bikes</strong>Riders, date, add-ons</span></li>
+    <li><span class="num" aria-hidden="true">3</span><span><strong>Checkout</strong>Guest details &amp; payment</span></li>
+  </ol>
+
+  <section aria-label="Choose a tour">
+    <h2 style="color:var(--navy)">Step 1 — Choose a tour</h2>
+    <p class="hint">One tour is pre-selected to show the selected state. Price, duration, and difficulty are on every card — the three things riders compare first.</p>
+    <div class="grid3">
+      <article class="card selected">
+        <div class="card-visual v-coast">COASTAL RIDE</div>
+        <div class="card-body"><span class="badge">Selected</span><h3>Coastal Sunrise Ride</h3><p class="meta">3 hours · 14 miles · Easy · Departs 7:00 AM</p><p>Cliff paths, a lighthouse stop, and coffee at the halfway point. Our most-booked ride for first-time visitors.</p><p class="price">$68 <small>per rider</small></p><a class="btn btn-primary" href="details.html">Continue with this tour →</a></div>
+      </article>
+      <article class="card">
+        <div class="card-visual v-city">CITY RIDE</div>
+        <div class="card-body"><span class="badge badge-blue">Guided</span><h3>Old Town City Loop</h3><p class="meta">2.5 hours · 9 miles · Easy · Departs 10:00 AM</p><p>Historic streets, markets, and murals at a relaxed pace, with plenty of photo stops built in.</p><p class="price">$54 <small>per rider</small></p><a class="btn btn-ghost" href="details.html">Choose this tour</a></div>
+      </article>
+      <article class="card">
+        <div class="card-visual v-vine">VINEYARD RIDE</div>
+        <div class="card-body"><span class="badge badge-blue">Small group</span><h3>Vineyard Valley Ride</h3><p class="meta">5 hours · 22 miles · Moderate · Departs 9:00 AM</p><p>Rolling valley roads, two tasting stops, and a farm lunch. E-bikes recommended for the hill section.</p><p class="price">$112 <small>per rider</small></p><a class="btn btn-ghost" href="details.html">Choose this tour</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section aria-label="Design notes">
+    <h2 style="color:var(--navy)">Design notes</h2>
+    <div class="notes">
+      <div class="note"><h3>Progress you can see</h3><p>A numbered stepper sits on every step with plain labels — “Choose a tour,” “Date &amp; bikes,” “Checkout” — so the flow never feels longer than it is.</p></div>
+      <div class="note"><h3>No surprise totals</h3><p>The price starts on the tour card and the full breakdown travels with the rider in a summary panel on steps 2 and 3. The total at checkout matches the total they saw first.</p></div>
+      <div class="note"><h3>States, not just screens</h3><p>Selected, guided, and small-group states use a badge plus a border and word label — never color alone — so the chosen tour is clear on any screen and for any rider.</p></div>
+    </div>
+    <h3 style="color:var(--navy)">Palette</h3>
+    <div class="swatch">
+      <span style="background:#16233A;color:#fff">Midnight Navy<br>#16233A</span>
+      <span style="background:#4EA8DE;color:#16233A">Sky<br>#4EA8DE</span>
+      <span style="background:#FFD23F;color:#16233A">Signal Yellow<br>#FFD23F</span>
+      <span style="background:#fff;border:1px solid #D9E2EC;color:#1B2735">Cloud<br>#F2F5F7</span>
+    </div>
+  </section>
+</div></main>
+<footer><div class="wrap">Original portfolio concept by Brittany Nation. Atlas Bike Tours is a fictional business; all tours, prices, and data are sample content. Design workflow: Sketch &amp; Webflow — this demo is hand-built in HTML/CSS.</div></footer>
+</body>
+</html>
