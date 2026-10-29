@@ -16,7 +16,8 @@ Built to support applications for **UI Designer**, **Front-End Designer**, **Web
 - **Form design with help built in** — hints where a rider would actually pause (what's included, where the confirmation goes, reschedule terms before the pay button, not after)
 - **Accessibility-minded choices** — contrast-safe pairings, badges and selected states that use words and borders, never color alone, skip link, `aria-current` navigation, real labels on every field
 - **Responsive layout** — tour cards and the summary layout stack cleanly on small screens, and the stepper becomes a vertical list on phones
-- **Semantic, framework-free build** — hand-written HTML/CSS, one stylesheet, no JavaScript required, no external images; all visuals are CSS-only
+- **Semantic, framework-free build** — hand-written HTML/CSS with vanilla JavaScript, one stylesheet, no external images; all visuals are CSS-only
+- **A flow that actually completes** — choosing a tour on step 1 carries into steps 2 and 3; date, riders, bike type, and add-ons update the order summary and totals live (8% taxes & fees); checkout validates name, email, card, expiry, and CVC inline; paying generates a booking reference and the confirmation page renders the actual booking
 
 ## Palette
 
@@ -39,7 +40,7 @@ Built to support applications for **UI Designer**, **Front-End Designer**, **Web
 
 ## Workflow note
 
-My design workflow runs in **Sketch and Webflow**, where I design interfaces and systems visually. This demo is hand-built in HTML/CSS to show the same flow thinking — step structure, hierarchy, pricing clarity, and states — expressed directly in code.
+My design workflow runs in **Sketch and Webflow**, where I design interfaces and systems visually. This demo is hand-built in HTML/CSS/JS to show the same flow thinking — step structure, hierarchy, pricing clarity, and states — expressed directly in code.
 
 ## Files
 
@@ -48,6 +49,7 @@ My design workflow runs in **Sketch and Webflow**, where I design interfaces and
 - `checkout.html` — step 3 view
 - `confirmation.html` — confirmation state
 - `styles.css` — design tokens and all component styles
+- `flow.js` — booking state, live totals, checkout validation, and confirmation rendering
 - `og-image.png` — 1200×627 social preview image in the project palette
 
 ## Note
