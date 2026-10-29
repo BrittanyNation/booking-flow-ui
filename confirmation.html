@@ -24,12 +24,12 @@
     <div class="checkbig" aria-hidden="true">✓</div>
     <p class="eyebrow">Booking confirmed</p>
     <h1 style="font-size:2.2rem">You're booked — see you at Pier 4.</h1>
-    <p class="lede" style="margin:0 auto">Booking reference <strong style="color:var(--navy)">ATLAS-7NOV-2481</strong>. A confirmation email with meeting-point directions is on its way to the lead rider.</p>
+    <p class="lede" style="margin:0 auto">Booking reference <strong style="color:var(--navy)" id="conf-ref">ATLAS-7NOV-2481</strong>. A confirmation email with meeting-point directions is on its way to the lead rider.</p>
   </section>
   <div class="layout">
     <section class="panel"><h2>What happens next</h2>
       <table><tbody>
-        <tr><th scope="row">Today</th><td>Confirmation email + receipt for $172.80</td></tr>
+        <tr><th scope="row">Today</th><td id="conf-receipt">Confirmation email + receipt for $172.80</td></tr>
         <tr><th scope="row">Nov 6</th><td>Weather check email and final meeting-point reminder</td></tr>
         <tr><th scope="row">Nov 7 · 6:40 AM</th><td>Arrive at Pier 4 for bike fitting — helmets included</td></tr>
         <tr><th scope="row">Nov 7 · 7:00 AM</th><td>Coastal Sunrise Ride departs</td></tr>
@@ -40,10 +40,11 @@
       <div class="row"><dt>Date</dt><dd>Sat, Nov 7 · 7:00 AM</dd></div>
       <div class="row"><dt>Riders</dt><dd>2</dd></div>
       <div class="row total"><dt>Paid today</dt><dd>$172.80</dd></div>
-    </dl><p style="margin-top:16px"><a class="btn btn-primary" href="index.html">Book another tour</a></p></aside>
+    </dl><p style="margin-top:16px"><a class="btn btn-primary" href="index.html" id="book-another">Book another tour</a></p></aside>
   </div>
   <p class="hint">Design choice: confirmation repeats the reference, total, and date in plain words — the three things a rider will come back to check — instead of ending on a generic “thanks.”</p>
 </div></main>
 <footer><div class="wrap">Original portfolio concept by Brittany Nation. Atlas Bike Tours is fictional; all data is sample content.</div></footer>
+<script src="flow.js"></script>
 </body>
 </html>
