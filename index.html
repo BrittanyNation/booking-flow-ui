@@ -39,17 +39,17 @@
     <h2 style="color:var(--navy)">Step 1 — Choose a tour</h2>
     <p class="hint">One tour is pre-selected to show the selected state. Price, duration, and difficulty are on every card — the three things riders compare first.</p>
     <div class="grid3">
-      <article class="card selected">
+      <article class="card selected" data-tour-card="coastal">
         <div class="card-visual v-coast">COASTAL RIDE</div>
-        <div class="card-body"><span class="badge">Selected</span><h3>Coastal Sunrise Ride</h3><p class="meta">3 hours · 14 miles · Easy · Departs 7:00 AM</p><p>Cliff paths, a lighthouse stop, and coffee at the halfway point. Our most-booked ride for first-time visitors.</p><p class="price">$68 <small>per rider</small></p><a class="btn btn-primary" href="details.html">Continue with this tour →</a></div>
+        <div class="card-body"><span class="badge">Selected</span><h3>Coastal Sunrise Ride</h3><p class="meta">3 hours · 14 miles · Easy · Departs 7:00 AM</p><p>Cliff paths, a lighthouse stop, and coffee at the halfway point. Our most-booked ride for first-time visitors.</p><p class="price">$68 <small>per rider</small></p><a class="btn btn-primary" href="details.html" data-choose>Continue with this tour →</a></div>
       </article>
-      <article class="card">
+      <article class="card" data-tour-card="city">
         <div class="card-visual v-city">CITY RIDE</div>
-        <div class="card-body"><span class="badge badge-blue">Guided</span><h3>Old Town City Loop</h3><p class="meta">2.5 hours · 9 miles · Easy · Departs 10:00 AM</p><p>Historic streets, markets, and murals at a relaxed pace, with plenty of photo stops built in.</p><p class="price">$54 <small>per rider</small></p><a class="btn btn-ghost" href="details.html">Choose this tour</a></div>
+        <div class="card-body"><span class="badge badge-blue">Guided</span><h3>Old Town City Loop</h3><p class="meta">2.5 hours · 9 miles · Easy · Departs 10:00 AM</p><p>Historic streets, markets, and murals at a relaxed pace, with plenty of photo stops built in.</p><p class="price">$54 <small>per rider</small></p><a class="btn btn-ghost" href="details.html" data-choose>Choose this tour</a></div>
       </article>
-      <article class="card">
+      <article class="card" data-tour-card="vineyard">
         <div class="card-visual v-vine">VINEYARD RIDE</div>
-        <div class="card-body"><span class="badge badge-blue">Small group</span><h3>Vineyard Valley Ride</h3><p class="meta">5 hours · 22 miles · Moderate · Departs 9:00 AM</p><p>Rolling valley roads, two tasting stops, and a farm lunch. E-bikes recommended for the hill section.</p><p class="price">$112 <small>per rider</small></p><a class="btn btn-ghost" href="details.html">Choose this tour</a></div>
+        <div class="card-body"><span class="badge badge-blue">Small group</span><h3>Vineyard Valley Ride</h3><p class="meta">5 hours · 22 miles · Moderate · Departs 9:00 AM</p><p>Rolling valley roads, two tasting stops, and a farm lunch. E-bikes recommended for the hill section.</p><p class="price">$112 <small>per rider</small></p><a class="btn btn-ghost" href="details.html" data-choose>Choose this tour</a></div>
       </article>
     </div>
   </section>
@@ -71,5 +71,6 @@
   </section>
 </div></main>
 <footer><div class="wrap">Original portfolio concept by Brittany Nation. Atlas Bike Tours is a fictional business; all tours, prices, and data are sample content. Design workflow: Sketch &amp; Webflow — this demo is hand-built in HTML/CSS.</div></footer>
+<script src="flow.js"></script>
 </body>
 </html>
