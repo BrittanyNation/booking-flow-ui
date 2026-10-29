@@ -85,3 +85,9 @@ th,td{text-align:left;padding:.6rem;border-bottom:1px solid var(--line)}
 .swatch{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 30px}
 .swatch span{flex:1;min-width:140px;border-radius:12px;padding:14px;font-weight:800;font-size:.9rem}
 footer{padding:28px 0 40px;color:var(--muted);font-size:.92rem}
+
+/* --- Working-flow additions (palette colors only) --- */
+.error{display:none;background:var(--yellow);color:var(--navy);font-size:.9rem;font-weight:600;margin:.35rem 0 0;padding:.35rem .6rem;border-radius:6px}
+.error.show{display:block}
+input.invalid{border-color:var(--navy);outline:2px solid var(--navy)}
+button.btn{border:0;cursor:pointer;font:inherit}
