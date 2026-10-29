@@ -22,26 +22,26 @@
 <main id="main"><div class="wrap">
   <ol class="stepper" aria-label="Booking progress">
     <li class="done"><span class="num" aria-hidden="true">✓</span><span><strong>Choose a tour</strong>Coastal Sunrise Ride</span></li>
-    <li class="done"><span class="num" aria-hidden="true">✓</span><span><strong>Date &amp; bikes</strong>Sat, Nov 7 · 2 riders</span></li>
+    <li class="done"><span class="num" aria-hidden="true">✓</span><span><strong>Date &amp; bikes</strong><span id="stepper-date">Sat, Nov 7 · 2 riders</span></span></li>
     <li class="active"><span class="num" aria-hidden="true">3</span><span><strong>Checkout</strong>You are here</span></li>
   </ol>
   <div class="layout">
     <section class="panel" aria-label="Checkout">
       <h2>Step 3 — Checkout</h2>
-      <form>
+      <form id="checkout-form" novalidate>
         <h3>Lead rider</h3>
         <div class="row2">
-          <div class="field"><label for="name">Full name</label><input id="name" autocomplete="name" placeholder="Jordan Ellis"></div>
-          <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" placeholder="jordan@example.com"><p class="hint">Your meeting-point details go here.</p></div>
+          <div class="field"><label for="name">Full name</label><input id="name" autocomplete="name" placeholder="Jordan Ellis"><p class="error" id="err-name">Please enter the lead rider’s full name.</p></div>
+          <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" placeholder="jordan@example.com"><p class="hint">Your meeting-point details go here.</p><p class="error" id="err-email">Please enter a valid email address.</p></div>
         </div>
         <h3>Payment <span class="hint">(demo — no real payment is taken)</span></h3>
-        <div class="field"><label for="card">Card number</label><input id="card" inputmode="numeric" placeholder="4242 4242 4242 4242"></div>
+        <div class="field"><label for="card">Card number</label><input id="card" inputmode="numeric" placeholder="4242 4242 4242 4242"><p class="error" id="err-card">Please enter a 16-digit card number.</p></div>
         <div class="row2">
-          <div class="field"><label for="exp">Expiry</label><input id="exp" placeholder="MM / YY"></div>
-          <div class="field"><label for="cvc">CVC</label><input id="cvc" inputmode="numeric" placeholder="123"></div>
+          <div class="field"><label for="exp">Expiry</label><input id="exp" placeholder="MM / YY"><p class="error" id="err-exp">Please enter a valid future expiry (MM / YY).</p></div>
+          <div class="field"><label for="cvc">CVC</label><input id="cvc" inputmode="numeric" placeholder="123"><p class="error" id="err-cvc">Please enter the 3-digit CVC.</p></div>
         </div>
         <div class="notice"><strong>Free reschedule</strong> up to 24 hours before departure. Weather cancellations by Atlas are always fully refunded.</div>
-        <p style="margin-top:18px"><a class="btn btn-yellow" href="confirmation.html">Pay $172.80 &amp; book →</a> <a class="btn btn-ghost" href="details.html">Back to details</a></p>
+        <p style="margin-top:18px"><button class="btn btn-yellow" type="submit" id="pay-btn">Pay $172.80 &amp; book →</button> <a class="btn btn-ghost" href="details.html">Back to details</a></p>
       </form>
     </section>
     <aside class="panel summary" aria-label="Order summary">
@@ -59,5 +59,6 @@
   </div>
 </div></main>
 <footer><div class="wrap">Original portfolio concept by Brittany Nation. Atlas Bike Tours is fictional; this checkout is a design demo and takes no payment.</div></footer>
+<script src="flow.js"></script>
 </body>
 </html>
