@@ -21,7 +21,7 @@
 <header class="topbar"><div class="wrap"><div class="brand">BRITTANY NATION <span>• DESIGN</span></div><nav class="nav" aria-label="Project"><a href="index.html">1 · Choose a tour</a><a href="details.html" aria-current="page">2 · Details</a><a href="checkout.html">3 · Checkout</a><a href="confirmation.html">Confirmed</a><a href="https://github.com/BrittanyNation/booking-flow-ui">GitHub Repo</a></nav></div></header>
 <main id="main"><div class="wrap">
   <ol class="stepper" aria-label="Booking progress">
-    <li class="done"><span class="num" aria-hidden="true">✓</span><span><strong>Choose a tour</strong>Coastal Sunrise Ride</span></li>
+    <li class="done"><span class="num" aria-hidden="true">✓</span><span><strong>Choose a tour</strong><span id="stepper-tour">Coastal Sunrise Ride</span></span></li>
     <li class="active"><span class="num" aria-hidden="true">2</span><span><strong>Date &amp; bikes</strong>You are here</span></li>
     <li><span class="num" aria-hidden="true">3</span><span><strong>Checkout</strong>Guest details &amp; payment</span></li>
   </ol>
@@ -30,16 +30,16 @@
       <h2>Step 2 — Date, riders &amp; bikes</h2>
       <form>
         <div class="row2">
-          <div class="field"><label for="date">Tour date</label><input id="date" type="date" value="2026-11-07"><p class="hint">Saturday departures fill first.</p></div>
+          <div class="field"><label for="date">Tour date</label><input id="date" type="date" value="2026-11-07"><p class="hint">Saturday departures fill first.</p><p class="error" id="err-date"></p></div>
           <div class="field"><label for="riders">Riders</label><select id="riders"><option>1 rider</option><option selected>2 riders</option><option>3 riders</option><option>4 riders</option></select></div>
         </div>
         <div class="field"><label for="bike">Bike type</label><select id="bike"><option selected>Comfort hybrid — included</option><option>E-bike — +$18 per rider</option><option>Road bike — +$12 per rider</option></select><p class="hint">Helmets and locks are included with every bike.</p></div>
         <fieldset style="border:0;padding:0;margin:0 0 16px"><legend style="font-weight:700;margin-bottom:.5rem">Add-ons</legend>
-          <label class="check"><input type="checkbox" checked><span><strong>Picnic basket — $24</strong><br><span class="hint">Local cheese, bread, and fruit for the lighthouse stop.</span></span></label>
-          <label class="check"><input type="checkbox"><span><strong>Photo package — $15</strong><br><span class="hint">Your guide's best shots, sent the same evening.</span></span></label>
-          <label class="check"><input type="checkbox"><span><strong>Flexible cancellation — $9</strong><br><span class="hint">Full refund up to 12 hours before departure.</span></span></label>
+          <label class="check"><input type="checkbox" id="addon-picnic" checked><span><strong>Picnic basket — $24</strong><br><span class="hint">Local cheese, bread, and fruit for the lighthouse stop.</span></span></label>
+          <label class="check"><input type="checkbox" id="addon-photo"><span><strong>Photo package — $15</strong><br><span class="hint">Your guide's best shots, sent the same evening.</span></span></label>
+          <label class="check"><input type="checkbox" id="addon-flex"><span><strong>Flexible cancellation — $9</strong><br><span class="hint">Full refund up to 12 hours before departure.</span></span></label>
         </fieldset>
-        <a class="btn btn-primary" href="checkout.html">Continue to checkout →</a>
+        <a class="btn btn-primary" href="checkout.html" id="to-checkout">Continue to checkout →</a>
         <a class="btn btn-ghost" href="index.html">Back to tours</a>
       </form>
     </section>
@@ -58,5 +58,6 @@
   </div>
 </div></main>
 <footer><div class="wrap">Original portfolio concept by Brittany Nation. Atlas Bike Tours is fictional; all data is sample content.</div></footer>
+<script src="flow.js"></script>
 </body>
 </html>
